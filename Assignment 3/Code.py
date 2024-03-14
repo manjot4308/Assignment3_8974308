@@ -51,20 +51,5 @@ dislike_button = driver.find_element(By.CSS_SELECTOR, ".ytd-toggle-button-render
 dislike_button.click()
 time.sleep(8)  # Wait for dislike to register
 
-# Feature 8: Subscribing to the channel
-subscribe_button = driver.find_element(By.CSS_SELECTOR, ".ytd-subscribe-button-renderer")
-subscribe_button.click()
-time.sleep(8)  # Wait for subscription to register
-
-# Feature 9: Navigating to the home page
-home_button = driver.find_element(By.CSS_SELECTOR, "#logo-icon-container")
-home_button.click()
-time.sleep(8)  # Wait for home page to load
-
-# Feature 10: Checking trending videos
-trending_button = driver.find_element(By.CSS_SELECTOR, "#endpoint[title='Trending']")
-trending_button.click()
-time.sleep(8)  # Wait for trending page to load
-
 # Closing the browser
 driver.quit()
